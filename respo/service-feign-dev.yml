@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
+server:
+  port: 8084
+spring:
+  application:
+    name: service-feign
+  main:
+    allow-bean-definition-overriding: true   #允许重写
+ribbon:
+  eureka:
+    enabled: true
+feign:
+  hystrix:
+    enabled: true  #默认不开启
