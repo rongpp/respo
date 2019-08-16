@@ -6,7 +6,7 @@ server:
   port: 8084
 spring:
   application:
-    name: service-feign
+    name: service-feign111
   main:
     allow-bean-definition-overriding: true   #允许重写
 ribbon:
